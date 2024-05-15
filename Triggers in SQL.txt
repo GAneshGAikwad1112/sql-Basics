@@ -1,0 +1,10 @@
+What are Triggers?
+      - Triggers are sql codes that are automatically executed in response to certain events on a particular table. These are used to maintain the Integrity of the data.
+
+      syntax and Example:
+            Create Trigger Trigger_Name
+            (Before | After)
+            [Insert | Update | Delete]
+            on [Table_Name]
+            [ for each row | for each column ]
+            [ Trigger_body]

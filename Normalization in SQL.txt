@@ -1,0 +1,31 @@
+what is normilization?
+      processes of reducing the redudancy of data.
+      Imporves the data Integrity
+
+
+
+Data Anomalies:
+      1. Insertion
+      2. Updation
+      3. Deletion
+
+Types of Normal forms:
+      1. 1st Normal form(1NF):        
+            - Removes repeating groups from the table
+            - Create a separate table for each set of related data
+            - Identify each set of related data with a primary key
+
+
+      2. 2nd normal form(2NF):
+            - It has to be in 1st Normal form.
+            - Table also should not contain partial dependency.
+
+      3. 3rd normal form(3NF):
+            - It has to be in 2nd Normal form.
+            - There should be no transitive dependency for non-prime attributs.
+
+      4. Boyce codd normal form(BCNF):
+            - It has to be in 3rd normal form
+            - Higher version 3NF and was developed by Raymond F. Boyce and Edgar F. codd
+            - Every functional dependency A -> B, then A has to be the super key of that particular table.
+            

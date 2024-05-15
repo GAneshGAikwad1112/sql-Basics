@@ -1,0 +1,193 @@
+create a database:  
+                  syntax:
+                        create database my_database_name;
+
+delete a database:  
+                  syntax:
+                        descriptions database my_database_name;
+
+create a table:  
+                  syntax:
+                        CREATE TABLE table_name(
+                              studentID INT NOT NULL AUTO_INCREMENT,
+                              FName VARCHAR(20),
+                              LName VARCHAR(20),
+                              Address VARCHAR(30),
+                              City VARCHAR(15),
+                              Marks INT,
+                              PRIMARY KEY(studentID)
+                        );
+
+delete a table:  
+                  syntax:
+                        drop table_name;
+
+
+SELECT QUERY: 
+
+      Most basic query used to manipulate a database is SELECT query
+
+      syntax:     
+            Select * from student;  #displaying all the column from the table
+            Select fname, lname from student;  #for displaying perticular column
+
+
+
+WHERE QUERY: 
+      If we need only certain records from the table.
+      where clause acts as a filtering mechanism.
+
+      syntax:
+            SELECT
+            column1, column2,.....column N
+            FROM table_name
+            WHERE condition;
+
+            example: 
+
+            SELECT FName
+            FROM student
+            WHERE City = 'Goa';
+
+
+AND, OR and NOT statements:
+
+      AND operator: 
+                  This operator displyes a records if all the condition separated by AND or TRUE
+
+            syntax: AND operator
+
+                  SELECT column1,column2,...... column N
+                  FROM table_name
+                  WHERE condition 1 AND condition 2;
+
+            example:
+                  SELECT * FROM student
+                  WHERE FName = 'John' AND LName = 'Deo';
+
+      OR operator: 
+                  This operator displyes a records if any of the conditions separated by OR is TRUE
+
+                  
+            syntax: OR operator
+
+                  SELECT column1,column2,...... column N
+                  FROM table_name
+                  WHERE condition 1 OR condition 2;
+
+            example:
+                  SELECT * FROM student
+                  WHERE FName = 'John' OR LName = 'Deo';
+      
+      NOT operator:
+                  This operator displays a records if the condition are NOT TRUE
+
+            syntax: NOT operator
+
+                  SELECT column1,column2,...... column N
+                  FROM table_name
+                  WHERE NOT condition 2;
+
+            example:
+                  SELECT * FROM student
+                  WHERE NOT LName = 'Deo';
+
+INSERT INTO query:
+      If we want ot insert any new record or data into a table then we can use the INSERT query
+
+      syntax: 
+            INSERT INTO table_name(column1, column2,... columnN)
+            VALUES (value1, value2, value3,.....)
+
+      Example:
+            INSERT INTO Student(studentID, FName, LName, Address
+            , City, Marks)
+            VALUES( 101, 'JHON', DOE', '#21, MG Road', 'Bengaluru', 550)
+
+AGGREGATE FUNCTIONS:
+      - COUNT
+            This is a function returns the number of rows that match specified criteria.
+
+            syntax: 
+                  COUNT (column_name)
+                  FROM table_name
+                  WHERE condition;
+
+            example:
+                  SELECT COUNT(studentID)
+                  FROM Student;
+
+      - AVERAGE
+            This function returns the average value of a numeric column.
+
+            syntax: 
+                  SELECT AVG (column_name)
+                  FROM table_name
+                  WHERE condition;
+
+            example:
+                  SELECT AVG(Marks)
+                  FROM Student;
+      
+      - SUM
+            This function returns the total sum of the numeric column.
+
+            syntax: 
+                  SELECT SUM (column_name)
+                  FROM table_name
+                  WHERE condition;
+
+            example:
+                  SELECT SUM(Marks)
+                  FROM Student;
+
+      - MIN
+            This function returns the smallest value of the selected column.
+
+            syntax: 
+                  SELECT MIN (column_name)
+                  FROM table_name
+                  WHERE condition;
+
+            example:
+                  SELECT fname, lname,  MIN(Marks)
+                  FROM Student;
+      
+      - MIX
+            This function returns the largest value of the selected column.
+
+            syntax: 
+                  SELECT MIX (column_name)
+                  FROM table_name
+                  WHERE condition;
+
+            example:
+                  SELECT fname, lname,  MIX(Marks)
+                  FROM Student;
+
+      - GROUP BY
+            Used in SQL to arrange idential data into groups with the help of some functions.
+
+            syntax: 
+                  SELECT column_name(s)
+                  FROM table_name
+                  WHERE condition
+                  GROUP BY column_name(s);
+
+            example:
+                  SELECT COUNT(studentID),City
+                  FROM Student
+                  GROUP BY City;
+
+
+      - DELETE
+            The SQL DELETE command is used to delete rows that are no longer required from the database tables.
+
+            syntax:
+                  DELETE FROM table_name
+                  WHERE condition;
+
+            example:
+                  SELECT * FROM student;
+                  DELETE FROM student
+                  WHERE City = 'Mumbai';

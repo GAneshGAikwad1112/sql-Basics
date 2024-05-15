@@ -1,0 +1,44 @@
+Traditional File system :
+      -The traditional file environment, also known as the file processing system, 
+      refers to the practice of storing and managing data using individual, separate files that 
+      are created and maintained by different applications or departments within an organization.
+            
+
+What is SQL? 
+
+      - Structred query language 
+
+      Types: 
+            -DDA (Data Defination language) = Deals with database schemas and descriptions of how the data should reside in the database.
+            -DCL (Data control language) = It includes commands such as GRANT and mostly concerned with rights, permissions and other controls of the database system.
+            -DML (Data manipulation language) = Deals with data manipulation and includes most common SQL statements.
+            -TCL (Transaction Control language) = It deals with a transaction within a database.
+
+Advantages of SQL: 
+      1. SQL has well defined standerds
+      2. SQL is easy to learn
+      3. In SQL we can create multiple views
+      4. SQL queries are portable
+      5. It is an Interactive language
+
+What is database? 
+      - Database is a location where data is stored in certain n format
+
+      Types:
+            1. Distributed Database
+            2. Object Oriented Database
+            3. Centrailized Database
+            4. Operational Database
+            5. Graph Database
+            6. NoSQL Database
+            7. cloud Database
+            8. Relational Database
+
+      Few popular Databases:
+            1. mongoDB
+            2. mostrace
+            3. Microsoft Access
+            4. Microsoft SQL server
+            5. MySQL
+            6. Oracle
+

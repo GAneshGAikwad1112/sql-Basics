@@ -1,0 +1,33 @@
+Comparison Operational:
+      
+      NOT IN
+
+            example:
+
+                  SQL> select dept_name, loc from dept where loc not in ('chennai','bangalore')
+
+            Output:
+                  dept_name         loc
+                  HR                Hyderabad
+
+      
+      IN
+            fetches values from a set of literals. It is used to test whether or not a value is "in" the list of 
+            values provided after the keyword IN. The IN condition can be used with any data type in SQL.
+
+            This condition is generally used when we want to check/fetch values from multiple values in single statement.
+
+            example:
+                  SQL> select first_name, deptno from employee where job_id in('J1','J2');
+
+            Output:
+                  first_name     deptno
+                  Smith             10
+
+
+Comparison operator  : LIKE condition
+
+      Like condition to perform wild card searches of valid search string values.
+            - search conditons can contain either characters or numbers
+            - % denotes zero or many characters
+            - _ denotes one character
